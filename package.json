@@ -1,11 +1,11 @@
 {
-  "name": "it-project",
+  "name": "ice-cream",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Kate-work-acc.github.io/it-project",
+  "homepage": "https://Andrii-Avramenko.github.io/ice-cream",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /it-project/"
+    "build": "parcel build src/*.html --public-url /ice-cream/"
   },
   "repository": {
     "type": "git",
