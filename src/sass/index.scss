@@ -1,2 +1,10 @@
-@import './common';
-@import './example';
+@use './utils/variables' as *;
+@use './base/reset' as *;
+@use './base/common' as *;
+@use './components/header' as *;
+@use './components/hero' as *;
+@use './components/products' as *;
+@use './components/work' as *;
+@use './components/reviews' as *;
+@use './components/spots' as *;
+@use './components/footer' as *;
