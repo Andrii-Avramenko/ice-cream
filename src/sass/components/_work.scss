@@ -1,1 +1,9 @@
 @use '../utils/variables' as *;
+
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid red;
+}
