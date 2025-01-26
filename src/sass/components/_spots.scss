@@ -1,15 +1,1 @@
 @use '../utils/variables' as *;
-
-.spots-list {
-    display: flex;
-    gap: 30px;
-}
-
-.spots-items {
-    border: 5px solid darkblue;
-}
-
-.spots-line {
-    width: 234px;
-    border-top: 1px solid #E1E1E1;
-}
