@@ -27,5 +27,11 @@
 <symbol id="icon-facebook" viewBox="0 0 16 32">
 <path d="M14.143 15.971h-4.033v14.865h-6.112v-14.865h-2.906v-5.222h2.906v-3.382c0-2.417 1.142-6.204 6.167-6.204l4.527 0.019v5.072h-3.284c-0.538 0-1.297 0.272-1.297 1.425v3.073h4.567l-0.534 5.219z"></path>
 </symbol>
+<symbol id="icon-red-arrow-right" viewBox="0 0 22 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.545 3.2l13.7 12.8-13.7 12.8"></path>
+</symbol>
+<symbol id="icon-white-arrow-right" viewBox="0 0 19 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l11.553 12.8-11.553 12.8"></path>
+</symbol>
 </defs>
 </svg>

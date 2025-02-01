@@ -1,1 +1,139 @@
 @use '../utils/variables' as *;
+
+.spots {
+  padding-top: 86px;
+  padding-bottom: 113px;
+  background-color: #fff5f6;
+}
+
+.spots-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.spots-items {
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  background-color: white;
+  padding: 43px 20px;
+}
+
+.spots-items:last-child {
+  margin-right: 0px;
+}
+
+.spots-subtitle {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 2px 40px;
+  background-color: #f0d1a5;
+  color: white;
+  font-family: $primaryFont;
+  font-weight: 500;
+}
+
+.spots-items:nth-child(2) .spots-subtitle {
+  background-color: #c2e297;
+}
+
+.spots-city {
+  margin-top: 25px;
+  font-family: $primaryFont;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29.76px;
+  letter-spacing: 0.04em;
+}
+
+.spots-desc {
+  margin-top: 10px;
+  font-family: $primaryFont;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #907e82;
+  line-height: 18px;
+}
+
+.spots-days {
+  font-family: $primaryFont;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.spots-days:first-child {
+   padding-top: 25px;
+}
+
+.spots-time {
+  color: #ffa5ba;
+  font-family: $primaryFont;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.spots-time:last-child {
+  margin-bottom: 25px;
+}
+
+.spots-time-list {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.spots-time-list::before,
+.spots-time-list::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #E1E1E1;
+}
+
+// .spots-adress-list {
+
+// }
+
+// .spots-adress-item {
+
+// }
+
+.spots-adress-link {
+  color: #907e82;
+  font-family: $primaryFont;
+  font-weight: 500;
+}
+
+.spots-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 54px;
+  align-items: center;
+}
+
+.spots-btn {
+  border-radius: 22px;
+  height: 44px;
+  border: 0px;
+  width: 161px;
+  font-family: $primaryFont;
+  font-weight: 700;
+}
+
+.btn-locations {
+  background-color: #d41342;
+  color: white;
+}
+
+.btn-franchise {
+  background-color: white;
+  color: #d41342;
+}
+
+.spots-svg {
+  height: 8px;
+  width: 5px;
+  margin-left: 8px;
+}
