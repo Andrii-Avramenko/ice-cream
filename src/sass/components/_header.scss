@@ -1,12 +1,10 @@
 @use '../utils/variables' as *;
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-color: #0f0;
     padding: 6px 20px;
-    margin: 0 auto;
 }
 .header-logo {
+    display: block;
     width: 199px;
     height: 50px;
 }
@@ -23,6 +21,12 @@
 .header-open {
     background-color: transparent;
     border: 0;
+}
+.header-burger {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: #D41443;
 }
 .header-buy {
     display: none;
