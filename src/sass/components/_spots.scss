@@ -59,7 +59,7 @@
 .spots-days {
   font-family: $primaryFont;
   font-weight: 500;
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 .spots-days:first-child {
@@ -70,16 +70,16 @@
   color: #ffa5ba;
   font-family: $primaryFont;
   font-weight: 500;
-  padding-top: 5px;
+  margin-top: 5px;
 }
 
 .spots-time:last-child {
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .spots-time-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .spots-time-list::before,
