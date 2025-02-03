@@ -1,1 +1,65 @@
 @use '../utils/variables' as *;
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-texts {
+    max-width: 209px;
+    text-wrap: wrap;
+    margin-bottom: 43px;
+}
+.footer-subtitle {
+    font-family: $minorFont;
+    margin-bottom: 17px;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffa5ba;
+}
+
+.footer-title {
+    font-family: $minorFont;
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+}
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+.footer-social {
+    display: flex;
+    justify-content: right;
+    gap: 28px;
+}
+.footer-link {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.footer-social-img {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    background-color: #ffa5ba;
+    border-radius: 50%;
+    fill: #fff;
+}
+
+.footer-contact {
+    font-family: $primaryFont;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    text-align: right;
+    color: #000;
+}
+
+.footer-social-link {
+    color: #D41443;
+}
