@@ -1,9 +1,16 @@
 @use '../utils/variables' as *;
 
+.footer {
+    background-color: $second-bg-color;
+}
 .footer-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+    }
 }
 
 .footer-texts {
@@ -18,7 +25,7 @@
     font-weight: 400;
     font-size: 18px;
     text-transform: uppercase;
-    color: #ffa5ba;
+    color: $second-accent-color;
 }
 
 .footer-title {
@@ -27,7 +34,7 @@
     font-size: 34px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: $color-accent;
 }
 
 .footer-address {
@@ -52,13 +59,13 @@
     width: 32px;
     height: 32px;
     padding: 6px;
-    background-color: #ffa5ba;
+    background-color: $second-accent-color;
     border-radius: 50%;
     fill: #fff;
 
     &:hover,
     &:focus {
-        background-color: #D41443;
+        background-color: $accent-color;
     }
 }
 
@@ -73,16 +80,16 @@
 }
 
 .footer-phone {
-    color: #D41443;
+    color: $accent-color;
 
     &:hover,
     &:focus {
-        color: #ffa5ba;
+        color: $second-accent-color;
     }
 }
 
 .footer-copyright {
-    border-top: 1px solid #e1e1e1;
+    border-top: 1px solid $line-color;
     padding: 9px 0;
 }
 
@@ -94,5 +101,5 @@
     line-height: 1.5;
     text-wrap: wrap;
     margin: 9px auto;
-    color: #907e82;
+    color: $desc-text-color;
 }
