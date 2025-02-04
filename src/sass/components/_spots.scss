@@ -59,11 +59,17 @@
 .spots-desc {
   margin-top: 10px;
   font-family: $primaryFont;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.04em;
   color: #907e82;
-  line-height: 18px;
+  line-height: 1.3;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-top: 14px;
+    line-height: 1.7;
+  }
 }
 
 .spots-days {
@@ -73,8 +79,11 @@
 }
 
 .spots-days:first-child {
-   padding-top: 30px;
-   margin-top: 0px;
+   margin-top: 25px;
+
+   @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
 }
 
 .spots-time {
@@ -85,7 +94,11 @@
 }
 
 .spots-time:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .spots-time-list {
@@ -120,13 +133,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-top: 54px;
+  margin-top: 54px;
   align-items: center;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: center;
-    padding-top: 81px;
+    margin-top: 81px;
+    gap: 15px;
   }
 }
 
