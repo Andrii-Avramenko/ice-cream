@@ -10,6 +10,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .spots-items {
@@ -17,6 +20,9 @@
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   background-color: white;
   padding: 43px 20px;
+  @media screen and (min-width: 768px) {
+    padding: 50px 30px;
+  }
 }
 
 .spots-items:last-child {
@@ -31,6 +37,9 @@
   color: white;
   font-family: $primaryFont;
   font-weight: 500;
+  @media screen and (min-width: 768px) {
+    padding: 3px 15px;
+  }
 }
 
 .spots-items:nth-child(2) .spots-subtitle {
@@ -44,16 +53,23 @@
   font-weight: 500;
   line-height: 29.76px;
   letter-spacing: 0.04em;
+
 }
 
 .spots-desc {
   margin-top: 10px;
   font-family: $primaryFont;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.04em;
   color: #907e82;
-  line-height: 18px;
+  line-height: 1.3;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-top: 14px;
+    line-height: 1.7;
+  }
 }
 
 .spots-days {
@@ -63,7 +79,11 @@
 }
 
 .spots-days:first-child {
-   padding-top: 25px;
+   margin-top: 25px;
+
+   @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
 }
 
 .spots-time {
@@ -75,6 +95,10 @@
 
 .spots-time:last-child {
   margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .spots-time-list {
@@ -109,8 +133,15 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-top: 54px;
+  margin-top: 54px;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 81px;
+    gap: 15px;
+  }
 }
 
 .spots-btn {
@@ -120,6 +151,10 @@
   width: 161px;
   font-family: $primaryFont;
   font-weight: 700;
+  font-size: 16px;
+  @media screen and (min-width: 768px) {
+    width: 191px;
+  }
 }
 
 .btn-locations {
