@@ -1,8 +1,29 @@
 @use '../utils/variables' as *;
 
 .footer {
+    position: relative;
     background-color: $second-bg-color;
+    padding-bottom: 25px;
+
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 18px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 10px;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 89px;
+        width: 100%;
+        height: 1px;
+        background-color: $line-color;
+    }
 }
+
 
 .footer-content {
     display: flex;
@@ -138,21 +159,17 @@
 }
 
 .footer-copyright {
-    border-top: 1px solid $line-color;
-    padding: 9px 0;
-
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
-        padding: 29px 0 18px 0;
-    }
-}
-
-.footer-copyright p {
     width: 135px;
     font-family: $primaryFont;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
     text-wrap: wrap;
-    text-align: center;
+    margin: 0 auto;
+    padding: 9px 0;
     color: $desc-text-color;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        padding: 29px 0 18px 0;
+    }
 }
