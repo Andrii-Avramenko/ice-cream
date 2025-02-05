@@ -49,11 +49,18 @@
 .spots-city {
   margin-top: 25px;
   font-family: $primaryFont;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 29.76px;
   letter-spacing: 0.04em;
 
+ @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 .spots-desc {
@@ -70,12 +77,25 @@
     margin-top: 14px;
     line-height: 1.7;
   }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 .spots-days {
   font-family: $primaryFont;
   font-weight: 500;
   margin-top: 25px;
+  font-size: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 .spots-days:first-child {
@@ -84,6 +104,10 @@
    @media screen and (min-width: 768px) {
     margin-top: 30px;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 32px;
+  }
 }
 
 .spots-time {
@@ -91,6 +115,15 @@
   font-family: $primaryFont;
   font-weight: 500;
   margin-top: 5px;
+  font-size: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 .spots-time:last-child {
@@ -98,6 +131,10 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 32px;
   }
 }
 
@@ -127,6 +164,16 @@
   color: #907e82;
   font-family: $primaryFont;
   font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 .spots-buttons {
@@ -141,6 +188,10 @@
     justify-content: center;
     margin-top: 81px;
     gap: 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 86px;
   }
 }
 
