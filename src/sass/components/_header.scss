@@ -1,8 +1,9 @@
 @use '../utils/variables' as *;
-
 .header {
-    background-color: #0f0;
-    padding: 6px 0;
+    position: absolute;
+    width: 100%;
+    top: 6;
+    z-index: 1;
 }
 
 .header-logo {

@@ -1,1 +1,37 @@
 @use '../utils/variables' as *;
+.hero {
+    position: relative;
+    height: 502px;
+    padding: 193px 0 160px 0;
+    background-color: #FFB8CA;
+    background-image: url("../images/hero/circle.webp");
+    background-repeat: no-repeat;
+    background-size: 346px;
+    background-position-x: 60%;
+    background-position-y: 83px;
+
+    &::after {
+        content: "";
+        width: 171px;
+        height: 410px;
+        position: absolute;
+        bottom: 0;
+        right: 32px;
+        background-image: url("../images/hero/hero-mob-icecream.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+.hero-content {
+    position: absolute;
+    // z-index: 1;
+}
+.hero-milk {
+    display:  none;
+}
+.hero-spots {
+    display: none;
+}
+.hero-tasty {
+    display: none;
+}
