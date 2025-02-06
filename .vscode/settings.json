@@ -1,0 +1,11 @@
+{
+    "discord.detailsDebugging": "Дебагает {file_name}",
+    "discord.detailsEditing": "Редачит {file_name}",
+    "discord.detailsIdling": "АФК",
+    "discord.idleTimeout": 30,
+    "discord.largeImageIdling": "АФК",
+    "discord.lowerDetailsDebugging": "Дебагает: {workspace}",
+    "discord.lowerDetailsIdling": "АФК",
+    "discord.lowerDetailsNoWorkspaceFound": "Неизвестно",
+    "discord.lowerDetailsEditing": "Редачит: {workspace}"
+}
