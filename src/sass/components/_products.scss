@@ -1,5 +1,8 @@
 @use '../utils/variables' as *;
-
+.products{
+margin-top: 120px;
+margin-bottom:100px ;
+}
 .products-subtitle {
   color: rgb(255, 165, 186);
   font-family: $minorFont;
@@ -97,6 +100,21 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.products-desc::before {
+    content: '';
+    position: absolute;
+    top: 230px;
+    left: 127px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 
+        10px 0 white, 
+        20px 0 white;  
+}
+
 
 .products-desc {
     text-align: center;
@@ -113,6 +131,10 @@
 }
 
 .products-button {
+    margin-left: 120px;
+    background-image: url(/src/images/products/row-right.png);
+    width: 40px;
+    height: 40px;
   margin-top: 30px;
   border: none;
   background-color: transparent;
