@@ -26,15 +26,16 @@
     @media screen and (min-width: $tablet) {
         height: 399px;
         padding-top: 94px;
-        background-size: 324px;
-        background-position: 306px 31px;
+        background-size: 324px 322px;
+        background-position: 66% 31px;
 
         &::after {
             width: 143px;
             height: 336px;
-            right: 247px;
+            right: 270px;
+            top: 63px;
             background-image: url("../images/hero/hero-tab-icecream.webp");
-        }
+        }   
 
     }
 }
@@ -45,6 +46,7 @@
 }
 
 .hero-subtitle {
+    width: 164px;
     font-family: $minorFont;
     font-size: 26px;
     letter-spacing: 0.04em;
@@ -99,7 +101,14 @@
     height: 126px;
 }
 
+.hero-milk-content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
 .hero-desc {
+    width: 114px;
     font-size: 8px;
     line-height: 1.5;
     color: $white-color;
@@ -112,12 +121,25 @@
     height: 18px;
     border-radius: 50%;
     background-color: $white-color;
+    fill: $accent-color;
     border: 0;
 }
 .hero-spots {
     display: none;
-}
 
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.hero-count {
+    font-family: $minorFont;
+    font-size: 28px;
+    color: $accent-color;
+}
+.hero-spot p {
+    text-align: right;
+}
 .hero-tasty {
     display: none;
 }

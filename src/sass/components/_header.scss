@@ -4,6 +4,10 @@
     width: 100%;
     top: 6;
     z-index: 1;
+
+    @media screen and (min-width: $tablet) {
+        top: 36px;
+    }
 }
 
 .header-logo {
@@ -26,6 +30,12 @@
     gap: 35px;
 }
 
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .header-btn-open {
     display: block;
     background-color: transparent;
@@ -34,8 +44,8 @@
 
 .header-burger {
     width: 20px;
-    height: 12px;
-    fill: #D41443;
+    height: 20px;
+    fill: $accent-color;
 }
 
 .header-buy {
@@ -47,5 +57,18 @@
     font-weight: 700;
     font-size: 16px;
     text-align: center;
-    color: #d41443;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 160px;
+        height: 44px;
+        color: $accent-color;
+    }
+}
+.header-arrow {
+    width: 16px;
+    fill: $accent-color;
 }
