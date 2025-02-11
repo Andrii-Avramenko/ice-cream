@@ -1,9 +1,10 @@
 @use '../utils/variables' as *;
-.products{
-margin-top: 120px;
-margin-bottom:100px ;
+.products {
+  padding-top: 120px;
+  padding-bottom: 100px;
 }
 .products-subtitle {
+  margin-bottom: 15px;
   color: rgb(255, 165, 186);
   font-family: $minorFont;
   font-size: 18px;
@@ -23,7 +24,7 @@ margin-bottom:100px ;
 }
 
 .products-list {
-  padding-top: 144px;
+  margin-top: 144px;
   gap: 130px;
   display: flex;
   flex-wrap: wrap;
@@ -33,24 +34,21 @@ margin-bottom:100px ;
 
 .products-item {
   position: relative;
-  overflow: visible;
-  justify-content: center;
   width: 280px;
   height: 485px;
   border-radius: 24px;
 }
 
 .products-item:nth-last-child(1) {
-  background-color:#c2e297 ;
+  background-color: #c2e297;
 }
 .products-item:nth-last-child(2) {
   background-color: #f0d1a5;
 }
 .products-item:nth-last-child(3) {
-  background-color:#ffb8ca ;
+  background-color: #ffb8ca;
 }
 .products-heading {
-  padding-top: 22px;
   text-align: center;
   margin-top: 161px;
   color: rgb(255, 255, 255);
@@ -75,8 +73,8 @@ margin-bottom:100px ;
   background-repeat: no-repeat;
 }
 
-.products-miskshakes::before{
-      content: '';
+.products-miskshakes::before {
+  content: '';
   position: absolute;
   top: -120px;
   left: 20px;
@@ -88,8 +86,8 @@ margin-bottom:100px ;
   background-repeat: no-repeat;
 }
 
-.products-ice-scream::before{
-      content: '';
+.products-ice-scream::before {
+  content: '';
   position: absolute;
   top: -120px;
   left: 20px;
@@ -101,25 +99,21 @@ margin-bottom:100px ;
   background-repeat: no-repeat;
 }
 .products-desc::before {
-    content: '';
-    position: absolute;
-    top: 230px;
-    left: 127px;
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 
-        10px 0 white, 
-        20px 0 white;  
+  content: '';
+  position: absolute;
+  top: 230px;
+  left: 127px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  box-shadow: 10px 0 white, 20px 0 white;
 }
 
-
 .products-desc {
-    text-align: center;
+  text-align: center;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
   width: 200px;
   margin-top: 66px;
   color: rgb(255, 255, 255);
@@ -131,10 +125,10 @@ margin-bottom:100px ;
 }
 
 .products-button {
-    margin-left: 120px;
-    background-image: url(/src/images/products/row-right.png);
-    width: 40px;
-    height: 40px;
+  margin-left: 120px;
+  background-image: url(/src/images/products/row-right.png);
+  width: 40px;
+  height: 40px;
   margin-top: 30px;
   border: none;
   background-color: transparent;
