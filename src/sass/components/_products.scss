@@ -2,6 +2,12 @@
 .products {
   padding-top: 120px;
   padding-bottom: 100px;
+
+  @media screen and (min-width: 768px) {
+    padding-top:122px;
+    padding-bottom: 112px;
+    
+  }
 }
 .products-subtitle {
   margin-bottom: 15px;
@@ -11,17 +17,25 @@
   font-weight: 400;
   line-height: 1.2;
   text-align: center;
+  @media screen and (min-width: 768px) {
+font-size: 26px;
+  }
 }
 
 .products-title {
-margin-bottom: 144px;
+  margin-bottom: 144px;
   color: rgb(212, 20, 67);
   font-family: $minorFont;
   font-size: 34px;
   font-weight: 400;
   line-height: 1.1;
- letter-spacing: 1.36px;
+  letter-spacing: 1.36px;
   text-align: center;
+ @media screen and (min-width: 768px) {
+margin-bottom: 150px;
+  font-family: Titan One;
+font-size: 48px;
+ }
 }
 
 .products-list {
@@ -30,34 +44,27 @@ margin-bottom: 144px;
   flex-wrap: wrap;
   justify-content: center;
 
-
   @media screen and (min-width: $tablet) {
     gap: 20px;
-}
+  }
 
-@media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     gap: 30px;
+  }
 }
-
-}
-
-
 
 .products-item {
   position: relative;
+  padding-bottom: 40px;
   width: 280px;
   border-radius: 24px;
   @media screen and (min-width: 768px) {
-
     flex-basis: calc((100% - 2 * 20px) / 3);
-
-}
-@media screen and (min-width: $desktop) {
+  }
+  @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 2 * 30px) / 3);
+  }
 }
-
-}
-
 
 .products-item:nth-last-child(1) {
   background-color: #c2e297;
@@ -86,21 +93,24 @@ margin-bottom: 144px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 220px;
-height: 233px;
-top: -122px;
+  width: 249px;
+  height: 252px;
+  top: -122px;
   left: 16px;
-@media screen and (min-width: 768px) {
-  background-image: url( /src/images/products/ice-cofee-tablet.png)
-}
+  @media screen and (min-width: 768px) {
+        width:220px;
+    height:224px ;
+    left: 0;
+    background-image: url(../images/products/ice-cofee-tablet.png);
+  }
 }
 
 .products-miskshakes::before {
   content: '';
   position: absolute;
-width: 220px;
-height: 226px;
-top: -115px;
+  width: 249px;
+  height: 252px;
+  top: -115px;
   left: 16px;
 
   background-image: url('/src/images/products/products-milkshake.png');
@@ -108,20 +118,26 @@ top: -115px;
   background-position: center;
   background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
-  background-image: url( /src/images/products/milkshake-tablet.png)
-}
+     width:220px;
+    height:224px ;
+        left: 0;
+    background-image: url(../images/products/milkshake-tablet.png);
+  }
 }
 
 .products-ice-scream::before {
   content: '';
   position: absolute;
- width: 220px;
-height: 226px;
-top: -122px;
+  width: 249px;
+  height: 252px;
+  top: -122px;
   left: 17px;
-@media screen and (min-width: 768px) {
-  background-image: url(/src/images/products/ice-cream-tablet.png)
-}
+  @media screen and (min-width: 768px) {
+     width:220px;
+    height:224px ;
+        left: 0;
+    background-image: url(../images/products/ice-cream-tablet.png);
+  }
   background-image: url('/src/images/products/products-icecream.png');
   background-size: cover;
   background-position: center;
@@ -138,9 +154,9 @@ top: -122px;
   border-radius: 50%;
   background-color: white;
   box-shadow: 10px 0 white, 20px 0 white;
-     @media screen and (min-width: 768px) {
-        left: 100px;
-     }
+  @media screen and (min-width: 768px) {
+    left: 90px;
+  }
 }
 
 .products-desc {
@@ -155,12 +171,13 @@ top: -122px;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: 0.56px;
+
 }
 
 .products-button {
   display: block;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
   background-image: url(/src/images/products/row-right.png);
   width: 40px;
   height: 40px;
