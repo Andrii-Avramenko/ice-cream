@@ -21,6 +21,14 @@
         width: 100%;
         height: 1px;
         background-color: $line-color;
+
+        @media screen and (min-width: $tablet) {
+            bottom: 73px;
+        }
+        
+        @media screen and (min-width: $desktop) {
+            bottom: 45px;
+        }
     }
 }
 
@@ -42,10 +50,12 @@
 
     @media screen and (min-width: $tablet) {
         max-width: 382px;
+        margin-bottom: 120px;
     }
 
     @media screen and (min-width: $desktop) {
         max-width: 462px;
+        margin-bottom: 106px;
     }
 }
 
@@ -126,7 +136,8 @@
     padding: 6px;
     background-color: $second-accent-color;
     border-radius: 50%;
-    fill: #fff;
+    fill: $white-color;
+    transition: background-color 250ms ease-in;
 
     &:hover,
     &:focus {
@@ -151,6 +162,7 @@
 
 .footer-phone {
     color: $accent-color;
+    transition: background-color, color 250ms ease-in;
 
     &:hover,
     &:focus {
@@ -166,10 +178,9 @@
     line-height: 1.5;
     text-wrap: wrap;
     margin: 0 auto;
-    padding: 9px 0;
     color: $desc-text-color;
 
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
-        padding: 29px 0 18px 0;
+    @media screen and (min-width: $tablet) {
+        width: 280px;
     }
 }

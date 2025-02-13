@@ -18,6 +18,10 @@
     @media screen and (min-width: $tablet) {
         max-width: 254px;
     }
+    
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
 }
 
 .header-menu.is-open {
@@ -36,7 +40,12 @@
     font-size: 16px;
     align-items: center;
     justify-content: center;
+    gap: 18px;
     color: $accent-color;
+    
+    @media screen and (min-width: $tablet) {
+        width: 186px;
+    }
 }
 
 .header-mob-arrow {

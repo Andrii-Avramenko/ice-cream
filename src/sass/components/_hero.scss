@@ -80,7 +80,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        width: 239px;
+        width: 277px;
         font-size: 38px;
     }
 }
@@ -108,7 +108,7 @@
     border-radius: 20px;
     font-size: 8px;
     color: $white-color;
-    transition: background-color 250ms ease-in;
+    transition: background-color, color, 250ms ease-in;
 
     @media (hover: hover) {
         background-color: $white-color;
@@ -128,8 +128,13 @@
 }
 
 .hero-him {
+    margin-right: 8px;
     background-color: $white-color;
     color: $accent-color;
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 15px;
+    }
 }
 
 .hero-milk {
@@ -175,12 +180,20 @@
     display: flex;
     align-items: center;
     margin-top: 7px;
+    cursor: pointer;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     background-color: $white-color;
     fill: $accent-color;
     border: 0;
+    transition: background-color 250ms ease-in;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        fill: $white-color;
+    }
 
     @media screen and (min-width: $desktop) {
         width: 26px;
@@ -195,23 +208,24 @@
         position: absolute;
         display: block;
         top: 96px;
-        right: 0;
+        right: 34;
     }
 
     @media screen and (min-width: $desktop) {
         top: 156px;
+        right: 97px;
     }
 }
 
 .hero-spot {
-    @media screen and (min-width: $tablet) {
-        background-image: url("../images/hero/spot-tab-circle.webp");
-        background-position: 30% 0;
-        background-repeat: no-repeat;
-    }
+    width: 43px;
+    background-image: url("../images/hero/spot-tab-circle.webp");
+    background-position: 100% 0;
+    background-repeat: no-repeat;
 
     @media screen and (min-width: $desktop) {
         background-image: url("../images/hero/spot-desk-circle.webp");
+        width: 74px;
     }
 }
 .hero-count {
@@ -223,11 +237,15 @@
         font-size: 46px;
     }
 }
-// .hero-spot p {
-//     font-size: 8px;
-//     text-align: right;
-//     color: $white-color;
-// }
+.hero-spot p {
+    
+    font-size: 8px;
+    color: $white-color;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+    }
+}
 .hero-tasty {
     display: none;
 
@@ -242,6 +260,7 @@
 
     @media screen and (min-width: $desktop) {
         top: 433px;
+        right: 97px;
         width: 293px;
         height: 232px;
     }
