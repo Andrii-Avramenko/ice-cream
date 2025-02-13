@@ -40,7 +40,21 @@
             top: 63px;
             background-image: url("../images/hero/hero-tab-icecream.webp");
         }   
+    }
 
+    @media screen and (min-width: $desktop) {
+        height: 665px;
+        padding-top: 171px;
+        background-size: 538px;
+        background-position: 66% 52px;
+
+        &::after {
+            width: 236px;
+            height: 557px;
+            right: 410px;
+            top: 108px;
+            background-image: url("../images/hero/hero-desk-icecream.png");
+        }   
     }
 }
 
@@ -64,6 +78,11 @@
     @media screen and (min-width: $tablet) {
         font-size: 22px;
     }
+
+    @media screen and (min-width: $desktop) {
+        width: 239px;
+        font-size: 38px;
+    }
 }
 
 .hero-title {
@@ -75,6 +94,10 @@
 
     @media screen and (min-width: $tablet) {
         font-size: 34px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 58px;
     }
 }
 
@@ -97,6 +120,11 @@
             color: $white-color;
         }
     }
+
+    @media screen and (min-width: $desktop) {
+        padding: 14px 19px;
+        font-size: 14px;
+    }
 }
 
 .hero-him {
@@ -117,6 +145,11 @@
 .hero-milk-img {
     width: 124px;
     height: 126px;
+
+    @media screen and (min-width: $desktop) {
+        width: 188px;
+        height: 191px;
+    }
 }
 
 // .hero-milk-content {
@@ -130,6 +163,12 @@
     font-size: 8px;
     line-height: 1.5;
     color: $white-color;
+
+    @media screen and (min-width: $desktop) {
+        width: 200px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
 }
 
 .hero-milk-btn {
@@ -142,21 +181,47 @@
     background-color: $white-color;
     fill: $accent-color;
     border: 0;
+
+    @media screen and (min-width: $desktop) {
+        width: 26px;
+        height: 26px;
+        margin-bottom: 11px;
+    }
 }
 .hero-spots {
     display: none;
 
     @media screen and (min-width: $tablet) {
-        display: block;
         position: absolute;
+        display: block;
         top: 96px;
         right: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 156px;
+    }
+}
+
+.hero-spot {
+    @media screen and (min-width: $tablet) {
+        background-image: url("../images/hero/spot-tab-circle.webp");
+        background-position: 30% 0;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-width: $desktop) {
+        background-image: url("../images/hero/spot-desk-circle.webp");
     }
 }
 .hero-count {
     font-family: $minorFont;
     font-size: 28px;
     color: $accent-color;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 46px;
+    }
 }
 // .hero-spot p {
 //     font-size: 8px;
@@ -173,5 +238,11 @@
         top: 266px;
         width: 168px;
         height: 133px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 433px;
+        width: 293px;
+        height: 232px;
     }
 }
