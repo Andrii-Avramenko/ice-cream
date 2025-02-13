@@ -1,1 +1,248 @@
 @use '../utils/variables' as *;
+
+.hero {
+    height: 502px;
+    padding-top: 193px;
+    background-color: #FFB8CA;
+    background-image: url("../images/hero/circle.webp");
+    background-repeat: no-repeat;
+    background-size: 346px;
+    background-position-x: 60%;
+    background-position-y: 83px;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 171px;
+        height: 410px;
+        position: absolute;
+        top: 92px;
+        right: 32px;
+        background-image: url("../images/hero/hero-mob-icecream.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    // @media screen and (min-width: $mobile) {
+    //     background-position-x: 100%;
+    // }
+
+    @media screen and (min-width: $tablet) {
+        height: 399px;
+        padding-top: 94px;
+        background-size: 324px 322px;
+        background-position: 66% 31px;
+
+        &::after {
+            width: 143px;
+            height: 336px;
+            right: 270px;
+            top: 63px;
+            background-image: url("../images/hero/hero-tab-icecream.webp");
+        }   
+    }
+
+    @media screen and (min-width: $desktop) {
+        height: 665px;
+        padding-top: 171px;
+        background-size: 538px;
+        background-position: 66% 52px;
+
+        &::after {
+            width: 236px;
+            height: 557px;
+            right: 410px;
+            top: 108px;
+            background-image: url("../images/hero/hero-desk-icecream.png");
+        }   
+    }
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 1;
+}
+
+.hero-texts {
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    width: 164px;
+    font-family: $minorFont;
+    font-size: 26px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $white-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 239px;
+        font-size: 38px;
+    }
+}
+
+.hero-title {
+    font-family: $minorFont;
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 34px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 58px;
+    }
+}
+
+.hero-button {
+    padding: 9px 14px;
+    background-color: $accent-color;
+    border: 0;
+    border-radius: 20px;
+    font-size: 8px;
+    color: $white-color;
+    transition: background-color 250ms ease-in;
+
+    @media (hover: hover) {
+        background-color: $white-color;
+        color: $accent-color;
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+            color: $white-color;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 14px 19px;
+        font-size: 14px;
+    }
+}
+
+.hero-him {
+    background-color: $white-color;
+    color: $accent-color;
+}
+
+.hero-milk {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        margin-top: 19px;
+        align-items: flex-end;
+    }
+}
+
+.hero-milk-img {
+    width: 124px;
+    height: 126px;
+
+    @media screen and (min-width: $desktop) {
+        width: 188px;
+        height: 191px;
+    }
+}
+
+// .hero-milk-content {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 7px;
+// }
+
+.hero-desc {
+    width: 114px;
+    font-size: 8px;
+    line-height: 1.5;
+    color: $white-color;
+
+    @media screen and (min-width: $desktop) {
+        width: 200px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+.hero-milk-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $white-color;
+    fill: $accent-color;
+    border: 0;
+
+    @media screen and (min-width: $desktop) {
+        width: 26px;
+        height: 26px;
+        margin-bottom: 11px;
+    }
+}
+.hero-spots {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        display: block;
+        top: 96px;
+        right: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 156px;
+    }
+}
+
+.hero-spot {
+    @media screen and (min-width: $tablet) {
+        background-image: url("../images/hero/spot-tab-circle.webp");
+        background-position: 30% 0;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-width: $desktop) {
+        background-image: url("../images/hero/spot-desk-circle.webp");
+    }
+}
+.hero-count {
+    font-family: $minorFont;
+    font-size: 28px;
+    color: $accent-color;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 46px;
+    }
+}
+// .hero-spot p {
+//     font-size: 8px;
+//     text-align: right;
+//     color: $white-color;
+// }
+.hero-tasty {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        display: block;
+        right: 34px;
+        top: 266px;
+        width: 168px;
+        height: 133px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 433px;
+        width: 293px;
+        height: 232px;
+    }
+}
