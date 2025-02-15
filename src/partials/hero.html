@@ -8,7 +8,17 @@
             <a href="#products"><button type="button" class="hero-button">Products</button></a>
             <a href="#work"><button type="button" class="hero-button hero-him">How it's made?</button></a>
             <div class="hero-milk">
-                <img src="images/hero/hero-milk.png" alt="" class="hero-milk-img">
+                <picture>
+                    <source srcset="
+                        ./images/hero/1x/hero-tab-milk-x1 1x,
+                        ./images/hero/2x/hero-tab-milk-x2 2x
+                      " media="(min-width: 768px)" />
+                    <source srcset="
+                        ./images/hero/1x/hero-desk-milk-x1 1x,
+                        ./images/hero/2x/hero-desk-milk-x2 2x
+                      " media="(min-width: 1200px)" />
+                    <img class="hero-milk-img" src="./images/hero/1x/hero-tab-milk-x1.webp" alt="" />
+                </picture>
                 <div class="hero-milk-content">
                     <p class="hero-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et</p>

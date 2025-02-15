@@ -164,7 +164,6 @@
 // }
 
 .hero-desc {
-    width: 114px;
     font-size: 8px;
     line-height: 1.5;
     color: $white-color;
@@ -187,7 +186,7 @@
     background-color: $white-color;
     fill: $accent-color;
     border: 0;
-    transition: background-color 250ms ease-in;
+    transition: background-color, fill, 250ms ease-in;
 
     &:hover,
     &:focus {
@@ -205,16 +204,9 @@
     display: none;
 
     @media screen and (min-width: $tablet) {
-        position: absolute;
-        display: block;
-        top: 96px;
-        right: 34;
-    }
-
-    @media screen and (min-width: $desktop) {
-        top: 156px;
-        right: 97px;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;}
 }
 
 .hero-spot {
