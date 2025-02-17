@@ -1,1 +1,75 @@
 @use '../utils/variables' as *;
+
+
+.reviews-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    margin: 0 auto; 
+    margin-bottom: 15px;
+}
+
+.reviews-background {
+    background-color: #FAFAFA;
+    margin: 0 20px;
+    // z-index: 0;
+}
+
+.reviews-quotes {
+    width: 54px;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+    margin-left: 61px;
+}
+
+.reviews-text {
+    padding: 30 50px;
+    font-family: $primaryFont;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 255%;
+    letter-spacing: 0%;
+    text-align: center;
+    z-index: 2;
+}
+
+.reviews-svg {
+    width: 12;
+    height: 12;
+    cursor: pointer;
+}
+
+.reviews-svg-list {
+    gap: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.reviews-home {
+    fill: #D31342;
+}
+
+.reviews-dot {
+    width: 4;
+    height: 4;
+    fill: #c7133e;
+}
+
+.reviews-dot-list {
+    padding-top: 30px; 
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center
+}
+
+.reviews-person {
+    text-align: center;
+    font-family: $primaryFont;
+    font-weight: 500;
+    font-size: 14px;
+}   

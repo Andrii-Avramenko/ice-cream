@@ -11,7 +11,7 @@ const testimonials = [
     {
         image: reviewImg2,
         quote: 'Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.',
-        author: 'John, New York'
+        author: 'Lisa, New York'
     },
     {
         image: reviewImg3,
