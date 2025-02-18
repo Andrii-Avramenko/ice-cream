@@ -1,47 +1,70 @@
 <section class="reviews" id="reviews">
-    <div class="container">
-        <img src="./images/reviews/reviews-per1.jpg" alt="Reviewer avatar" class="reviews-img" id="reviews-img">
-        <div class="reviews-background">
-            <svg class="reviews-quotes"><use href="./images/icecream.svg#icon-quote"></use></svg>
-            <P class="reviews-text" id="reviews-text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</P>
-            <svg class="reviews-dot" width="4" height="4"><use href="./images/icecream.svg#icon-reviews-dot"></use></svg>
-            <svg class="reviews-dot" width="4" height="4"><use href="./images/icecream.svg#icon-reviews-dot"></use></svg>
-            <svg class="reviews-dot" width="4" height="4"><use href="./images/icecream.svg#icon-reviews-dot"></use></svg>
-            <p class="reviews-person" id="reviews-person">Emily, Los Angeles</p>
-            <svg class="reviews-svg reviews-home" width="12" height="12" onclick="changeTestimonial(0)"><use href="./images/icecream.svg#icon-home"></use></svg>
-            <svg class="reviews-svg" width="12" height="12" onclick="changeTestimonial(1)"><use href="./images/icecream.svg#icon-reviews-dot"></use></svg>
-            <svg class="reviews-svg" width="12" height="12" onclick="changeTestimonial(2)"><use href="./images/icecream.svg#icon-reviews-dot"></use></svg>
-        </div>
+  <div class="container">
+    <img
+      src="./images/reviews/reviews-per1.jpg"
+      alt="Reviewer avatar"
+      class="reviews-img"
+      id="reviews-img"
+    />
+    <div class="reviews-background">
+      <!-- <svg class="reviews-quotes">
+        <use href="./images/icecream.svg#icon-quote"></use>
+      </svg> -->
+      <p class="reviews-text" id="reviews-text">
+        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
+        in nibh vel risus.
+      </p>
     </div>
-
-    <!-- <script>
-        const testimonials = [
-            {
-                image: './images/reviews/reviews-per1.jpg',
-                quote: 'Nullam viverra consectetur. Quisque cursus et, porttitor risus.',
-                author: 'Emily, Los Angeles'
-            },
-            {
-                image: './images/reviews/reviews-per2.jpg',
-                quote: 'Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.',
-                author: 'John, New York'
-            },
-            {
-                image: './images/reviews/reviews-per3.jpg',
-                quote: 'Lorem ipsum primis in nibh vel risus.',
-                author: 'Sophia, Chicago'
-            }
-        ];
-
-        function changeTestimonial(index) {
-            document.getElementById('reviews-img').src = testimonials[index].image;
-            document.getElementById('reviews-text').innerText = testimonials[index].quote;
-            document.getElementById('reviews-person').innerText = testimonials[index].author;
-
-            // const dots = document.querySelectorAll('.dot');
-            // dots.forEach((dot, i) => {
-            //     dot.classList.toggle('active', i === index);
-            // });
-        }
-    </script> -->
+    <ul class="reviews-dot-list">
+      <li class="reviews-dot-item">
+        <svg class="reviews-dot" width="4" height="4" fill="#c7133e">
+          <use href="./images/icecream.svg#icon-reviews-dot"></use>
+        </svg>
+      </li>
+      <li class="reviews-dot-item">
+        <svg class="reviews-dot" width="4" height="4">
+          <use href="./images/icecream.svg#icon-reviews-dot"></use>
+        </svg>
+      </li>
+      <li class="reviews-dot-item">
+        <svg class="reviews-dot" width="4" height="4" fill="#c7133e">
+          <use href="./images/icecream.svg#icon-reviews-dot"></use>
+        </svg>
+      </li>
+    </ul>
+    <p class="reviews-person" id="reviews-person">Emily, Los Angeles</p>
+    <ul class="reviews-svg-list">
+      <li class="reviews-svg-item">
+        <svg
+          class="reviews-svg reviews-home"
+          width="12"
+          height="12"
+          onclick="changeTestimonial(0)"
+        >
+          <use href="./images/icecream.svg#icon-home"></use>
+        </svg>
+      </li>
+      <li class="reviews-svg-item">
+        <svg
+          class="reviews-svg"
+          width="12"
+          height="12"
+          onclick="changeTestimonial(1)"
+        >
+          <use href="./images/icecream.svg#icon-reviews-dot"></use>
+        </svg>
+      </li>
+      <li class="reviews-svg-item">
+        <svg
+          class="reviews-svg"
+          width="12"
+          height="12"
+          onclick="changeTestimonial(2)"
+        >
+          <use href="./images/icecream.svg#icon-reviews-dot"></use>
+        </svg>
+      </li>
+    </ul>
+  </div>
 </section>
