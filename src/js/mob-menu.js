@@ -5,7 +5,6 @@
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    console.log('isMenuOpen', isMenuOpen)
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     openMenuBtn.classList.toggle('visually-hidden');
     mobileMenu.classList.toggle('is-open');
@@ -22,7 +21,6 @@
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    console.log('width')
     if (!e.matches) {
       openMenuBtn.classList.toggle('visually-hidden');
       return;
