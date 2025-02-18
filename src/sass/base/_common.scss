@@ -1,6 +1,10 @@
 @use '../utils/variables' as *;
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     padding: 0 15px;
     margin: 0 auto;

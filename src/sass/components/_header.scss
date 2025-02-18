@@ -23,11 +23,28 @@
 
 .header-nav {
     display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;   
+    }
 }
 
 .header-list {
     display: flex;
     gap: 35px;
+}
+
+.header-link {
+    font-weight: 700;
+    font-size: 16px;
+    color: $white-color;
+    transition: color 250ms ease-in;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 
 .header-buttons {
@@ -40,6 +57,10 @@
     display: block;
     background-color: transparent;
     border: 0;
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
 }
 
 .header-burger {
@@ -57,6 +78,17 @@
     font-weight: 700;
     font-size: 16px;
     text-align: center;
+    transition: background-color, color, 250ms ease-in;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $white-color;
+
+        .header-arrow {
+            fill: $white-color;
+        }
+    }
 
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -71,4 +103,5 @@
 .header-arrow {
     width: 16px;
     fill: $accent-color;
+    transition: fill 250ms ease-in;
 }
