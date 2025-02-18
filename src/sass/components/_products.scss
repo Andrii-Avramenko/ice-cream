@@ -19,6 +19,10 @@
   @media screen and (min-width: 768px) {
     font-size: 26px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 
 .products-title {
@@ -32,9 +36,14 @@
   text-align: center;
   @media screen and (min-width: 768px) {
     margin-bottom: 150px;
-    font-family: Titan One;
     font-size: 48px;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    margin-bottom: 200px;
+    
+  }
+
 }
 
 .products-list {
@@ -104,12 +113,25 @@
   }
   @media screen and (min-width: 1200px) {
     left: 50px;
+    background-image: url(../images/products/ice-coffe-dekstop-1x.png);
   }
-    @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/products/ice-coffe-2x.png);
-  }
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2), 
+ (min-resolution: 192dpi), 
+ (min-resolution: 2dppx)
+ {
+ .products-ice-coffee::before {
+  background-image: url(../images/products/ice-coffe-2x.png);
+
+    @media screen and (min-width: $tablet) {
+     background-image: url(../images/products/ice-coffe-tablet-2x.png);
+    }
+
+    @media screen and (min-width: $desktop) {
+    background-image: url(/src/images/products/ice-coffe-dekstop-2x.png);
+    }
+ }
 }
 
 .products-miskshakes::before {
@@ -132,12 +154,27 @@
   }
   @media screen and (min-width: 1200px) {
     left: 50px;
+    background-image: url(../images/products/milkshake-dekstop-1x.png);
   }
-    @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/products/milkshake-2x.png);
-  }
+
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2), 
+ (min-resolution: 192dpi), 
+ (min-resolution: 2dppx)
+ {
+ .products-ice-scream::before {
+  background-image: url(../images/products/milkshake-2x.png);
+
+    @media screen and (min-width: $tablet) {
+     background-image: url(../images/products/milkshake-tablet-2x.png);
+    }
+
+    @media screen and (min-width: $desktop) {
+    background-image: url(../images/products/milkshake-dekstop-2x.png);
+    }
+ }
 }
 
 .products-ice-scream::before {
@@ -147,7 +184,7 @@
   height: 252px;
   top: -122px;
   left: 17px;
-  background-image: url(/src/images/products/products-icecream.png);
+  background-image: url(../images/products/products-icecream.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -159,12 +196,26 @@
   }
   @media screen and (min-width: 1200px) {
     left: 50px;
+    background-image: url(../images/products/ice-cream-dekstop-1x.png);
   }
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/products/ice-cream-2x.png);
-  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2), 
+ (min-resolution: 192dpi), 
+ (min-resolution: 2dppx)
+ {
+ .products-ice-scream::before {
+  background-image: url(../images/products/ice-cream-2x.png);
+
+    @media screen and (min-width: $tablet) {
+     background-image: url(../images/products/ice-cream-tablet-2x.png);
+    }
+
+    @media screen and (min-width: $desktop) {
+    background-image: url(../images/products/ice-cream-dekstop-2x.png);
+    }
+ }
 }
 .products-desc::before {
   content: '';
@@ -212,7 +263,7 @@
   border: none;
 }
 .products-button:hover {
-  transition: background-color, fill, 250ms ease-in;
+ transition: transform 250ms ease-in-out;
   background-color: rgba(212, 20, 67, 0.1);
   fill: darkred;
   transform: scale(1.1);
