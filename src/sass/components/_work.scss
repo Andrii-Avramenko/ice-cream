@@ -1,1 +1,161 @@
 @use '../utils/variables' as *;
+
+.work-list {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    margin-bottom: 139px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-img-milk {
+    width: 516px;
+    height: 516px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+}
+
+.work-div {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(/src/images/work/work-background.png);
+    margin-bottom: 39px;
+
+    @media screen and (min-width: 768px) {
+    }
+
+}
+
+.work-title {
+    font-family: $minorFont;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa5ba;
+    margin-top: 149px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-header {
+    font-family: $minorFont;
+    font-weight: 400;
+    font-size: 58px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #d41443;
+    margin-bottom: 65px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-text_text-black {
+    font-family: $primaryFont;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: #000;
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-text_text-grey {
+    font-family: $primaryFont;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    color: #907e82;
+    display: flex;
+
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-button {
+    width: 176px;
+    height: 44px;
+    color: #d41443;
+    border-radius: 25px;
+    background-color: white;
+
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-icon1 {
+    width: 33px;
+    height: 50px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-icon2 {
+    width: 50px;
+    height: 50px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-icon3 {
+    width: 44px;
+    height: 50px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-item-text1 {
+    font-family: $primaryFont;
+    font-weight: 400;
+    font-size: 58px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #d41443;
+    display: flex;
+    justify-content: start;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-item-text2 {
+    font-family: $primaryFont;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+    color: #000;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
