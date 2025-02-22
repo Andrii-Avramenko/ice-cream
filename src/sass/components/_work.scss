@@ -21,13 +21,26 @@
 
 }
 
-.work-div {
+.work-container {
     display: flex;
     flex-direction: row-reverse;
-    background-image: url(/src/images/work/work-background.png);
+    align-items: center;
     margin-bottom: 39px;
+    background-image: url(/src/images/work/work-background.png);
+    background-size: contain;
 
     @media screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+    }
+}
+
+.work-text-content {
+    max-width: 400px;
+    margin-left: 74px;
+    font-size: 13px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
     }
 
 }
@@ -65,7 +78,7 @@
 .work-text_text-black {
     font-family: $primaryFont;
     font-weight: 500;
-    font-size: 16px;
+    /*font-size: 16px;*/
     line-height: 176%;
     letter-spacing: 0.04em;
     color: #000;
@@ -79,11 +92,12 @@
 .work-text_text-grey {
     font-family: $primaryFont;
     font-weight: 500;
-    font-size: 14px;
+    /*font-size: 14px;*/
     line-height: 194%;
     letter-spacing: 0.04em;
     color: #907e82;
     display: flex;
+    padding-top: 39px;
 
 
     @media screen and (min-width: 768px) {
@@ -97,11 +111,25 @@
     color: #d41443;
     border-radius: 25px;
     background-color: white;
+    margin-top: 45px;
+    border: none;
+    transition: background-color 0.4s ease, color 0.4s ease;
 
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
     }
+}
+
+.work-button::after {
+    content: ">";
+    padding-left: 16px;
+
+
+}
+
+.work-button:hover {
+    background-color: rgb(238, 238, 238);
 }
 
 .work-icon1 {
@@ -117,6 +145,7 @@
     width: 50px;
     height: 50px;
 
+
     @media screen and (min-width: 768px) {
         flex-direction: row;
     }
@@ -125,6 +154,7 @@
 .work-icon3 {
     width: 44px;
     height: 50px;
+
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
@@ -141,6 +171,8 @@
     color: #d41443;
     display: flex;
     justify-content: start;
+    padding-top: 54px;
+    padding-bottom: 30px;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
