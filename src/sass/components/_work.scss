@@ -1,1 +1,218 @@
 @use '../utils/variables' as *;
+
+.work-list {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    margin-bottom: 139px;
+    margin-top: 39px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 17px;
+    }
+}
+
+.work-img-milk {
+    /*width: 516px;
+    height: 516px;*/
+    width: 280px;
+    height: 279px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+}
+
+.work-container {
+    display: flex;
+    /*flex-direction: row-reverse;*/
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 39px;
+    background-image: url(/src/images/work/work-background.png);
+    background-size: contain;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-text-content {
+    max-width: 400px;
+    /*
+    margin-left: 74px;
+    */
+    font-size: 13px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+}
+
+.work-title {
+    font-family: $minorFont;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa5ba;
+    margin-top: 149px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-header {
+    font-family: $minorFont;
+    font-weight: 400;
+    font-size: 58px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #d41443;
+    margin-bottom: 65px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-text_text-black {
+    font-family: $primaryFont;
+    font-weight: 500;
+    /*font-size: 16px;*/
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: #000;
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-text_text-grey {
+    font-family: $primaryFont;
+    font-weight: 500;
+    /*font-size: 14px;*/
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    color: #907e82;
+    display: flex;
+    padding-top: 39px;
+
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-button {
+    width: 176px;
+    height: 44px;
+    color: #d41443;
+    border-radius: 25px;
+    background-color: white;
+    margin-top: 45px;
+    border: none;
+    transition: background-color 0.4s ease, color 0.4s ease;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+/*.work-button::after {
+    content: ">";
+    padding-left: 16px;
+
+
+}
+
+.work-button:hover {
+    background-color: rgb(238, 238, 238);
+}
+    */
+    .work-button {
+        &:hover,
+        &:focus {
+            background-color: #ecebeb;;
+        }
+    }
+
+.work-icon1 {
+    width: 33px;
+    height: 50px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-icon2 {
+    width: 50px;
+    height: 50px;
+
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-icon3 {
+    width: 44px;
+    height: 50px;
+
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.work-item-text1 {
+    font-family: $primaryFont;
+    font-weight: 400;
+    font-size: 58px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #d41443;
+    display: flex;
+    justify-content: start;
+
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        margin-top: 36px;
+        margin-bottom: 13px;
+    }
+
+    @media screen and (min-width: 1200px){
+        font-size: 58px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        
+    }
+}
+
+.work-item-text2 {
+    font-family: $primaryFont;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+    color: #000;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+      }
+}
