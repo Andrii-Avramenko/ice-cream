@@ -26,7 +26,7 @@
     flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 39px;
-    background-image: url(/src/images/work/work-background.png);
+    background-image: url(./src/images/work/work-background.png);
     background-size: contain;
 
     @media screen and (min-width: 768px) {
@@ -121,7 +121,7 @@
     }
 }
 
-.work-button::after {
+/*.work-button::after {
     content: ">";
     padding-left: 16px;
 
@@ -131,6 +131,13 @@
 .work-button:hover {
     background-color: rgb(238, 238, 238);
 }
+    */
+    .work-button {
+        &:hover,
+        &:focus {
+            background-color: #ecebeb;;
+        }
+    }
 
 .work-icon1 {
     width: 33px;
@@ -171,11 +178,19 @@
     color: #d41443;
     display: flex;
     justify-content: start;
-    padding-top: 54px;
-    padding-bottom: 30px;
 
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        margin-top: 36px;
+        margin-bottom: 13px;
+    }
+
+    @media screen and (min-width: $desktop){
+        font-size: 58px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        
     }
 }
 
@@ -187,7 +202,11 @@
     letter-spacing: 0.02em;
     color: #000;
 
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
     }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+      }
 }
