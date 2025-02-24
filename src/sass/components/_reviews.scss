@@ -7,31 +7,60 @@
     border-radius: 100%;
     margin: 0 auto; 
     margin-bottom: 15px;
+    margin-top: 121px;
 }
 
 .reviews-background {
     background-color: #FAFAFA;
-    margin: 0 20px;
-    // z-index: 0;
+    position: relative;
 }
 
-.reviews-quotes {
+.reviews-background::before {
+    content: "";
+    background-image: url(../images/reviews/quotes.png);
+    background-repeat: no-repeat;
     width: 54px;
     height: 40px;
-    position: relative;
-    z-index: 1;
-    margin-left: 61px;
+    position: absolute;
+    top: 28px;
+    left: 61px;
+
+    @media screen and (min-width: 768px) {
+    left: 40px;
+    top: 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    
+  }
 }
+
+// .reviews-quotes {
+//     width: 54px;
+//     height: 40px;
+//     position: relative;
+//     z-index: 1;
+//     margin-left: 61px;
+// }
 
 .reviews-text {
     padding: 30 50px;
     font-family: $primaryFont;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 255%;
-    letter-spacing: 0%;
+font-weight: 500;
+font-size: 12px;
+line-height: 30.6px;
+letter-spacing: 0%;
     text-align: center;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 .reviews-svg {
@@ -52,19 +81,10 @@
     fill: #D31342;
 }
 
-.reviews-dot {
-    width: 4;
-    height: 4;
-    fill: #c7133e;
-}
-
-.reviews-dot-list {
-    padding-top: 30px; 
-    padding-bottom: 18px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center
+.reviews-dots {
+    margin: 15px auto;
+    width: 32px;
+    height: 4px;
 }
 
 .reviews-person {
@@ -72,4 +92,12 @@
     font-family: $primaryFont;
     font-weight: 500;
     font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+  }
 }   
