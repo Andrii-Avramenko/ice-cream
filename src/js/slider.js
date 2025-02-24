@@ -5,7 +5,7 @@ import reviewImg3 from '../images/reviews/reviews-per3.jpg';
 const testimonials = [
     {
         image: reviewImg1,
-        quote: 'Nullam viverra consectetur. Quisque cursus et, porttitor risus.',
+        quote: 'Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.',
         author: 'Emily, Los Angeles'
     },
     {
@@ -25,9 +25,9 @@ export function changeTestimonial(index) {
     document.getElementById('reviews-text').innerText = testimonials[index].quote;
     document.getElementById('reviews-person').innerText = testimonials[index].author;
 
-    // const dots = document.querySelectorAll('.dot');
-    // dots.forEach((dot, i) => {
-    //     dot.classList.toggle('active', i === index);
-    // });
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+    });
 }
 window.changeTestimonial = changeTestimonial;
