@@ -41,9 +41,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 58px;
     margin-bottom: 200px;
-    
   }
-
 }
 
 .products-list {
@@ -92,6 +90,7 @@
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 
 .products-ice-coffee::before {
@@ -112,26 +111,28 @@
     background-image: url(../images/products/ice-cofee-tablet.png);
   }
   @media screen and (min-width: 1200px) {
-    left: 50px;
+    width: 335px;
+    height: 335px;
+    left: 0px;
+    top: -200px;
     background-image: url(../images/products/ice-coffe-dekstop-1x.png);
   }
 }
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2), 
- (min-resolution: 192dpi), 
- (min-resolution: 2dppx)
- {
- .products-ice-coffee::before {
-  background-image: url(../images/products/ice-coffe-2x.png);
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .products-ice-coffee::before {
+    background-image: url(../images/products/ice-coffe-2x.png);
 
     @media screen and (min-width: $tablet) {
-     background-image: url(../images/products/ice-coffe-tablet-2x.png);
+      background-image: url(../images/products/ice-coffe-tablet-2x.png);
     }
 
     @media screen and (min-width: $desktop) {
-    background-image: url(/src/images/products/ice-coffe-dekstop-2x.png);
+      background-image: url(/src/images/products/ice-coffe-dekstop-2x.png);
     }
- }
+  }
 }
 
 .products-miskshakes::before {
@@ -153,28 +154,30 @@
     background-image: url(../images/products/milkshake-tablet.png);
   }
   @media screen and (min-width: 1200px) {
-    left: 50px;
+    width: 335px;
+    height: 335px;
+        left: 0px;
+    top: -200px;
+
     background-image: url(../images/products/milkshake-dekstop-1x.png);
   }
-
 }
 
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2), 
- (min-resolution: 192dpi), 
- (min-resolution: 2dppx)
- {
- .products-ice-scream::before {
-  background-image: url(../images/products/milkshake-2x.png);
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .products-ice-scream::before {
+    background-image: url(../images/products/milkshake-2x.png);
 
     @media screen and (min-width: $tablet) {
-     background-image: url(../images/products/milkshake-tablet-2x.png);
+      background-image: url(../images/products/milkshake-tablet-2x.png);
     }
 
     @media screen and (min-width: $desktop) {
-    background-image: url(../images/products/milkshake-dekstop-2x.png);
+      background-image: url(../images/products/milkshake-dekstop-2x.png);
     }
- }
+  }
 }
 
 .products-ice-scream::before {
@@ -195,27 +198,29 @@
     background-image: url(../images/products/ice-cream-tablet.png);
   }
   @media screen and (min-width: 1200px) {
-    left: 50px;
+    width: 335px;
+    height: 335px;
+        left: 0px;
+    top: -200px;
     background-image: url(../images/products/ice-cream-dekstop-1x.png);
   }
 }
 
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2), 
- (min-resolution: 192dpi), 
- (min-resolution: 2dppx)
- {
- .products-ice-scream::before {
-  background-image: url(../images/products/ice-cream-2x.png);
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .products-ice-scream::before {
+    background-image: url(../images/products/ice-cream-2x.png);
 
     @media screen and (min-width: $tablet) {
-     background-image: url(../images/products/ice-cream-tablet-2x.png);
+      background-image: url(../images/products/ice-cream-tablet-2x.png);
     }
 
     @media screen and (min-width: $desktop) {
-    background-image: url(../images/products/ice-cream-dekstop-2x.png);
+      background-image: url(../images/products/ice-cream-dekstop-2x.png);
     }
- }
+  }
 }
 .products-desc::before {
   content: '';
@@ -263,7 +268,7 @@
   border: none;
 }
 .products-button:hover {
- transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
   background-color: rgba(212, 20, 67, 0.1);
   fill: darkred;
   transform: scale(1.1);
