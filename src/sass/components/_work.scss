@@ -2,11 +2,15 @@
 
 .work-list {
     display: flex;
-    flex-direction: column;
-    flex-direction: row-reverse;
-    margin-bottom: 139px;
+    flex-direction: column; 
     margin-top: 39px;
+    margin-bottom: 139px;
+    display: flex;
 
+ @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 60px;
+    }
     @media screen and (min-width: 768px) {
         display: flex;
         gap: 17px;
@@ -18,11 +22,17 @@
     height: 516px;*/
     width: 280px;
     height: 279px;
+    margin-right: auto;
+    margin-left: auto;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
     }
-
+    @media screen and(min-width: 1200px) {
+        width: 516px;
+        height: 516px;
+        
+    }
 }
 
 .work-container {
@@ -33,6 +43,31 @@
     margin-bottom: 39px;
     background-image: url(/src/images/work/work-background.png);
     background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+        flex-direction: column-reverse;
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        }
+
+}
+
+.work-text-content {
+    width: 220px;
+
+    @media screen and (min-width: 768px) {
+        width: 340px;
+    }
+
+}
+
+.work-image-content {
+    margin-bottom: 48px;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
@@ -138,14 +173,16 @@
     background-color: rgb(238, 238, 238);
 }
     */
-    .work-button {
-        &:hover,
-        &:focus {
-            background-color: #ecebeb;;
-        }
-    }
+.work-button {
 
-.work-icon1 {
+    &:hover,
+    &:focus {
+        background-color: #ecebeb;
+        ;
+    }
+}
+
+.work-icon-first {
     width: 33px;
     height: 50px;
 
@@ -154,7 +191,7 @@
     }
 }
 
-.work-icon2 {
+.work-icon-second {
     width: 50px;
     height: 50px;
 
@@ -164,7 +201,7 @@
     }
 }
 
-.work-icon3 {
+.work-icon-third {
     width: 44px;
     height: 50px;
 
@@ -174,8 +211,8 @@
     }
 }
 
-.work-item-text1 {
-    font-family: $primaryFont;
+.work-item-text-first {
+    font-family: $minorFont;
     font-weight: 400;
     font-size: 58px;
     letter-spacing: 0.04em;
@@ -192,15 +229,15 @@
         margin-bottom: 13px;
     }
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
         font-size: 58px;
         margin-top: 40px;
         margin-bottom: 15px;
-        
+
     }
 }
 
-.work-item-text2 {
+.work-item-text-second {
     font-family: $primaryFont;
     font-weight: 700;
     font-size: 16px;
@@ -214,5 +251,12 @@
 
     @media screen and (min-width: 768px) {
         font-size: 16px;
-      }
+    }
 }
+
+/*.arrow-work {
+    width: 10px;
+    height: 10px;
+    color: #d41443;
+}
+    */
